@@ -1,0 +1,19 @@
+@import "../../assets/global/global.scss";
+
+header {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  z-index: 999;
+  .block {
+    @include flex(row, space-between, center, nowrap, unset, 40px, 0, 0);
+    .burgerMenu {
+      display: none;
+      font-size: 25px;
+      @media all and (max-width: 768px) {
+        display: block;
+        cursor: pointer;
+      }
+    }
+  }
+}

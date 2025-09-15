@@ -1,0 +1,53 @@
+@import "../../../assets/global/global.scss";
+
+.block {
+  @include flex(row, space-between, center, nowrap, unset, 20px, 0, 0);
+  @media all and (max-width: 768px) {
+       @include flex(column, space-between, center, nowrap, unset, 20px, 0, 0);
+  }
+  .box {
+    @include flex(row, unset, center, nowrap, unset, 40px, 0, 0);
+    .iconsLinks {
+      @include flex(column, center, center, nowrap, unset, 10px, 0, 0);
+      color: #8a2be2;
+      font-size: 28px;
+    }
+    .boxInfo {
+      @include flex(column, center, start, nowrap, unset, 20px, 0, 0);
+      h2 {
+        font-size: 5vw;
+        @media all and (max-width: 768px) {
+            font-size: 3em;
+        }
+      }
+      h3 {
+        color: #808080;
+      }
+      p {
+        max-width: 310px;
+      }
+    }
+  }
+  img {
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 35% 50px;
+    filter: contrast(1.7);
+  }
+}
+
+.scrollDown {
+    display: block;
+    text-align: center;
+    margin: 40px 0;
+    i {
+        color: #8a2be2;
+        animation: trans 2s infinite;
+    }
+}
+
+@keyframes trans {
+    50% {
+        transform: translate(0, 10px);
+    }
+}

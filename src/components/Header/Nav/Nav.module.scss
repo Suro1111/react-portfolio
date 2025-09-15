@@ -1,0 +1,31 @@
+@import "../../../assets/global/global.scss";
+
+.nav {
+  @include flex(row, space-between, center, nowrap, unset, 20px, 0, 0);
+  text-transform: capitalize;
+  @media all and (max-width: 768px) {
+    display: none;
+  }
+  a {
+    cursor: pointer;
+  }
+}
+.navMedia {
+  @include flex(column, center, center, nowrap, unset, 20px, 0, 0);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% 8%;
+  transition: 1s;
+  width: 50%;
+  height: 80vh;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 15px grey;
+  a {
+    cursor: pointer;
+  }
+}
+.navMedia.close {
+  top: -2000px;
+}

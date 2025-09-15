@@ -1,0 +1,33 @@
+@import "../../../assets/global/global.scss";
+
+.block {
+  padding: 40px 0;
+  .bigTitle {
+    font-size: 4em;
+    text-align: center;
+    color: #0000003d;
+    @media all and (max-width: 768px) {
+      font-size: 7vw;
+    }
+  }
+  .title {
+    font-size: 28px;
+    text-align: center;
+    transform: translateY(-24px);
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 5px;
+      background-color: #8a2be2;
+      left: 50%;
+      bottom: 0;
+      translate: -50%;
+    }
+    @media all and (max-width: 768px) {
+      font-size: 4vw;
+      transform: translateY(0);
+    }
+  }
+}

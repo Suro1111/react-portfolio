@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  max-width: 1220px;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.active {
+  color: red;
+}
+
+header,
+main,
+footer {
+  padding: 20px;
+}
+
+.btn-grad {
+  background-image: linear-gradient(to right, #da22ff 0%, #9733ee 51%, #da22ff 100%);
+}
+
+.btn-grad {
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  text-align: unset;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+@media all and (max-width: 768px) {
+  .block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-align: unset;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+}
+.block .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: unset;
+  align-items: center;
+  flex-wrap: nowrap;
+  text-align: unset;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+.block .box .iconsLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  text-align: unset;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  color: #8a2be2;
+  font-size: 28px;
+}
+.block .box .boxInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: nowrap;
+  text-align: unset;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+.block .box .boxInfo h2 {
+  font-size: 5vw;
+}
+@media all and (max-width: 768px) {
+  .block .box .boxInfo h2 {
+    font-size: 3em;
+  }
+}
+.block .box .boxInfo h3 {
+  color: #808080;
+}
+.block .box .boxInfo p {
+  max-width: 310px;
+}
+.block img {
+  max-height: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 35% 50px;
+  filter: contrast(1.7);
+}
+
+.scrollDown {
+  display: block;
+  text-align: center;
+  margin: 40px 0;
+}
+.scrollDown i {
+  color: #8a2be2;
+  animation: trans 2s infinite;
+}
+
+@keyframes trans {
+  50% {
+    transform: translate(0, 10px);
+  }
+}/*# sourceMappingURL=Home.module.css.map */
