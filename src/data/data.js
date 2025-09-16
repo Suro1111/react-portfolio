@@ -74,3 +74,43 @@ export const experience = [
     text: "I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.",
   },
 ];
+
+export const serviceData = [
+  {
+    logo: "fa-solid fa-pen-ruler",
+    title: "UI/UX Consutancy",
+    subTitle: "What is UX consulting?",
+    desq: "UX consulting heilps companies improve their product's overall usability and optimize expenses by impiementing the right UX processes, methods, and tools.",
+    p1: "Establish the right UX processes",
+    p2: "Create exceptional user experiences",
+    p3: "Discover new business",
+    p4: "Save resources",
+  },
+  {
+    logo: "fa-solid fa-photo-film",
+    title: "Branding & Design",
+    subTitle: "What is Brand & Design?",
+    desq: "Brand Design can be defined as one of the crucial marketind=g practices...",
+    p1: "Logo Design",
+    p2: "Banner Design",
+    p3: "Visual Identity Packages",
+    p4: "Business Cards & Business Systems",
+  },
+  {
+    logo: "fa-solid fa-file-code",
+    title: "Web Development",
+    subTitle: "What is Web Development?",
+    desq: "Web development services are used to design, build, support...",
+    p1: "Web application development",
+    p2: "Testing",
+    p3: "Maintenance",
+  },
+  {
+    logo: "fa-solid fa-align-left",
+    title: "Content Writing",
+    subTitle: "Content writing is the process of planning, writing and editing web content...",
+    p1: "Web content writing",
+    p2: "Blog writing for websites",
+    p3: "Social media content",
+  },
+];

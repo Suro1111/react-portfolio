@@ -56,4 +56,33 @@ footer {
   background-position: right center; /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
+}
+
+.bigTitle {
+  padding: 30px 0;
+}
+
+.block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: unset;
+  flex-wrap: nowrap;
+  text-align: unset;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+@media all and (max-width: 1024px) {
+  .block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: unset;
+    flex-wrap: wrap;
+    text-align: unset;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
 }/*# sourceMappingURL=Services.module.css.map */

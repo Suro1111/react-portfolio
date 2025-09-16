@@ -1,0 +1,39 @@
+@import "../../../../assets/global/global.scss";
+
+.serviceModal.open {
+  top: 50%;
+}
+
+.serviceModal {
+  @include flex(column, center, unset, nowrap, unset, 20px, 20px, 0);
+  box-shadow: 0 0 5px #808080;
+  border-radius: 20px;
+  background-color: #fff;
+  max-width: 500px;
+  position: fixed;
+  top: -200%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: 999;
+  transition: 0.5s;
+  @media all and (max-width: 768px) {
+    width: 290px;
+  }
+  i {
+    background-color: grey;
+    padding: 4px 20px 4px 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+  .checkBox {
+    color: #8a2be2;
+    @include flex(row, unset, center, nowrap, unset, 5px, 0, 0);
+    i {
+      background: #8a2be2;
+      color: #fff;
+      padding: 3px;
+      border-radius: 50%;
+    }
+  }
+}

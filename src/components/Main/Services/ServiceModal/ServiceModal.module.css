@@ -58,59 +58,58 @@ footer {
   text-decoration: none;
 }
 
-.nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-  text-align: unset;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
-  text-transform: capitalize;
-}
-@media all and (max-width: 768px) {
-  .nav {
-    display: none;
-  }
-}
-.nav a {
-  cursor: pointer;
+.serviceModal.open {
+  top: 50%;
 }
 
-.navMedia {
+.serviceModal {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: unset;
   flex-wrap: nowrap;
   text-align: unset;
   gap: 20px;
-  padding: 0;
+  padding: 20px;
   margin: 0;
+  box-shadow: 0 0 5px #808080;
+  border-radius: 20px;
+  background-color: #fff;
+  max-width: 500px;
   position: fixed;
-  top: 50%;
+  top: -200%;
   left: 50%;
-  translate: -50% 8%;
-  transition: 1s;
-  width: 50%;
-  height: 80vh;
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 0 15px grey;
+  translate: -50% -50%;
+  z-index: 999;
+  transition: 0.5s;
 }
 @media all and (max-width: 768px) {
-  .navMedia {
-    width: 90%;
-    height: 60vh;
-    translate: -50% 20%;
+  .serviceModal {
+    width: 290px;
   }
 }
-.navMedia a {
+.serviceModal i {
+  background-color: grey;
+  padding: 4px 20px 4px 8px;
+  border-radius: 50%;
   cursor: pointer;
+  align-self: flex-end;
 }
-
-.navMedia.close {
-  top: -2000px;
-}/*# sourceMappingURL=Nav.module.css.map */
+.serviceModal .checkBox {
+  color: #8a2be2;
+  display: flex;
+  flex-direction: row;
+  justify-content: unset;
+  align-items: center;
+  flex-wrap: nowrap;
+  text-align: unset;
+  gap: 5px;
+  padding: 0;
+  margin: 0;
+}
+.serviceModal .checkBox i {
+  background: #8a2be2;
+  color: #fff;
+  padding: 3px;
+  border-radius: 50%;
+}/*# sourceMappingURL=ServiceModal.module.css.map */
