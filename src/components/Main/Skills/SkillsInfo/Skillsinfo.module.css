@@ -58,31 +58,44 @@ footer {
   text-decoration: none;
 }
 
-header {
-  position: sticky;
-  top: 0;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  z-index: 999;
+.skillsInfo {
+  max-width: 400px;
+  width: 100%;
 }
-header .block {
+@media all and (max-width: 1024px) {
+  .skillsInfo {
+    max-width: 100%;
+  }
+}
+.skillsInfo .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: unset;
+  flex-wrap: nowrap;
+  text-align: unset;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+.skillsInfo .box .chlid {
+  box-shadow: 0 0 5px #808080;
+  padding: 20px;
+  border-radius: 20px;
+}
+.skillsInfo .box .chlid .info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
   text-align: unset;
-  gap: 40px;
+  gap: 20px;
   padding: 0;
   margin: 0;
 }
-header .block .burgerMenu {
-  display: none;
-  font-size: 25px;
-}
-@media all and (max-width: 768px) {
-  header .block .burgerMenu {
-    display: block;
-    cursor: pointer;
-  }
-}/*# sourceMappingURL=Header.module.css.map */
+.skillsInfo .box .chlid .border {
+  width: 100%;
+  height: 8px;
+  border-radius: 15px;
+}/*# sourceMappingURL=Skillsinfo.module.css.map */

@@ -58,31 +58,29 @@ footer {
   text-decoration: none;
 }
 
-header {
-  position: sticky;
-  top: 0;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  z-index: 999;
+.education {
+  max-width: 400px;
+  width: 100%;
 }
-header .block {
+@media all and (max-width: 1024px) {
+  .education {
+    max-width: 100%;
+  }
+}
+.education .box {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: unset;
   flex-wrap: nowrap;
   text-align: unset;
-  gap: 40px;
+  gap: 15px;
   padding: 0;
   margin: 0;
 }
-header .block .burgerMenu {
-  display: none;
-  font-size: 25px;
-}
-@media all and (max-width: 768px) {
-  header .block .burgerMenu {
-    display: block;
-    cursor: pointer;
-  }
-}/*# sourceMappingURL=Header.module.css.map */
+.education .box .chlid {
+  box-shadow: 0 0 5px #808080;
+  border-bottom: 5px solid #8a2be2;
+  border-radius: 20px;
+  padding: 20px;
+}/*# sourceMappingURL=Education.module.css.map */

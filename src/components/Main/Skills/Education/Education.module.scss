@@ -1,0 +1,18 @@
+@import "../../../../assets/global/global.scss";
+
+.education {
+  max-width: 400px;
+  width: 100%;
+  @media all and (max-width: 1024px) {
+    max-width: 100%;
+  }
+  .box {
+    @include flex(column, unset, unset, nowrap, unset, 15px, 0, 0);
+    .chlid {
+      box-shadow: 0 0 5px #808080;
+      border-bottom: 5px solid #8a2be2;
+      border-radius: 20px;
+      padding: 20px;
+    }
+  }
+}

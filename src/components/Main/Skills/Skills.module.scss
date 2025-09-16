@@ -1,1 +1,21 @@
 @import "../../../assets/global/global.scss";
+
+.p {
+  max-width: 600px;
+}
+
+.block {
+  @include flex(row, space-between, flex-start, nowrap, unset, 15px, 30px 0, 0);
+  @media all and (max-width: 1024px) {
+    @include flex(
+      column,
+      space-between,
+      flex-start,
+      nowrap,
+      unset,
+      15px,
+      30px 0,
+      0
+    );
+  }
+}

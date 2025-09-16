@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Nav } from "./Nav/Nav";
+import { Link } from "react-scroll";
 
 //* css
 import style from "./Header.module.css";
@@ -11,7 +12,7 @@ export const Header = () => {
     <header>
       <div className="container">
         <div className={style.block}>
-          <a href="#">Suren</a>
+          <Link to="home" style={{cursor: "pointer"}}>Suren</Link>
           <Nav isOpen={isOpen} setIsOpen={setIsOpen}/>
           <div onClick={toggleMenu} className={style.burgerMenu}>
             {isOpen ? (
