@@ -1,4 +1,7 @@
 import {
+  client1,
+  client2,
+  client3,
   portfolio1,
   portfolio2,
   portfolio3,
@@ -167,5 +170,26 @@ export const portfolioData = [
     category: "Youtube",
     imgSrc: portfolio6,
     desq: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fugit, nobis repudiandae expedita optio debitis repellendus. Dolor ducimus doloribus adipisci.",
+  },
+];
+
+export const clientData = [
+  {
+    id: 1,
+    imgSrc: client1,
+    desc: "Hi, I'm Jon Collins and I am designer & developer who Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fugit, nobis repudiandae expedita optio debitis repellendus. Dolor ducimus doloribus adipisci.",
+    name: "Marketing Manager",
+  },
+  {
+    id: 2,
+    imgSrc: client2,
+    desc: "Hi, I'm Anna Metcalfe and I am designer & developer who Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fugit, nobis repudiandae expedita optio debitis repellendus. Dolor ducimus doloribus adipisci.",
+    name: "Graphing Designer",
+  },
+  {
+    id: 3,
+    imgSrc: client3,
+    desc: "Hi, I'm Maykl Collins and I am designer & developer who Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fugit, nobis repudiandae expedita optio debitis repellendus. Dolor ducimus doloribus adipisci.",
+    name: "App Developer",
   },
 ];

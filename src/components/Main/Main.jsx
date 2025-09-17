@@ -8,6 +8,7 @@ export const Main = () => {
       <Skills />
       <Services />
       <Portfolio />
+      <Clients />
       <Contact />
         <div className="container">
             {/* <h1>React Portfolio</h1> */}

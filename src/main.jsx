@@ -8,6 +8,7 @@ import {
   experience,
   serviceData,
   portfolioData,
+  clientData,
 } from "./data/data.js";
 
 export const myContect = createContext();
@@ -21,6 +22,7 @@ createRoot(document.getElementById("root")).render(
       experience,
       serviceData,
       portfolioData,
+      clientData,
     }}
   >
     <App />

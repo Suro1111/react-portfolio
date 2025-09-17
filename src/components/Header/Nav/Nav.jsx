@@ -11,6 +11,7 @@ export const Nav = ({ isOpen, setIsOpen }) => {
     "skills",
     "services",
     "portfolio",
+    "clients",
     "contact",
   ];
   
