@@ -17,7 +17,8 @@
   z-index: 999;
   transition: 0.5s;
   @media all and (max-width: 768px) {
-    width: 290px;
+    // width: 290px;
+    width: 88%;
   }
   i {
     background-color: grey;

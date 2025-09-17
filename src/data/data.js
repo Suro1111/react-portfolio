@@ -1,3 +1,12 @@
+import {
+  portfolio1,
+  portfolio2,
+  portfolio3,
+  portfolio4,
+  portfolio5,
+  portfolio6,
+} from "../assets/images";
+
 export const education = [
   {
     title: "2020-2021",
@@ -108,9 +117,55 @@ export const serviceData = [
   {
     logo: "fa-solid fa-align-left",
     title: "Content Writing",
-    subTitle: "Content writing is the process of planning, writing and editing web content...",
+    subTitle:
+      "Content writing is the process of planning, writing and editing web content...",
     p1: "Web content writing",
     p2: "Blog writing for websites",
     p3: "Social media content",
+  },
+];
+
+export const portfolioData = [
+  {
+    id: 1,
+    title: "UI/UX Design",
+    category: "Youtube",
+    imgSrc: portfolio1,
+    desq: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fugit, nobis repudiandae expedita optio debitis repellendus. Dolor ducimus doloribus adipisci.",
+  },
+  {
+    id: 2,
+    title: "Branding & Design",
+    category: "Youtube",
+    imgSrc: portfolio2,
+    desq: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fugit, nobis repudiandae expedita optio debitis repellendus. Dolor ducimus doloribus adipisci.",
+  },
+  {
+    id: 3,
+    title: "Web Design",
+    category: "Youtube",
+    imgSrc: portfolio3,
+    desq: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fugit, nobis repudiandae expedita optio debitis repellendus. Dolor ducimus doloribus adipisci.",
+  },
+  {
+    id: 4,
+    title: "Web Development",
+    category: "Youtube",
+    imgSrc: portfolio4,
+    desq: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fugit, nobis repudiandae expedita optio debitis repellendus. Dolor ducimus doloribus adipisci.",
+  },
+  {
+    id: 5,
+    title: "Content Writing",
+    category: "Youtube",
+    imgSrc: portfolio5,
+    desq: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fugit, nobis repudiandae expedita optio debitis repellendus. Dolor ducimus doloribus adipisci.",
+  },
+  {
+    id: 6,
+    title: "Interface Design",
+    category: "Youtube",
+    imgSrc: portfolio6,
+    desq: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fugit, nobis repudiandae expedita optio debitis repellendus. Dolor ducimus doloribus adipisci.",
   },
 ];

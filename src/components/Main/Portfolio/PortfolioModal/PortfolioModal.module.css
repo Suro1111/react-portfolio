@@ -59,12 +59,42 @@ footer {
 }
 
 .block {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  background-color: #fff;
+  z-index: 9999;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 5px #cecaca;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: unset;
+  flex-wrap: nowrap;
+  text-align: unset;
+  gap: 10px;
+  padding: 15px;
+  margin: 0;
+  border-radius: 15px;
+  transition: 0.5s;
 }
 @media all and (max-width: 768px) {
   .block {
-    grid-template-columns: repeat(1, 1fr);
+    max-width: 88%;
   }
-}/*# sourceMappingURL=Portfolio.module.css.map */
+}
+.block i {
+  cursor: pointer;
+  align-self: flex-end;
+}
+.block img {
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.block.closen {
+  top: -200%;
+}/*# sourceMappingURL=PortfolioModal.module.css.map */

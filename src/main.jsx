@@ -7,13 +7,21 @@ import {
   skillsData,
   experience,
   serviceData,
+  portfolioData,
 } from "./data/data.js";
 
 export const myContect = createContext();
 
 createRoot(document.getElementById("root")).render(
   <myContect.Provider
-    value={{ education, skillsData, awards, experience, serviceData }}
+    value={{
+      education,
+      skillsData,
+      awards,
+      experience,
+      serviceData,
+      portfolioData,
+    }}
   >
     <App />
   </myContect.Provider>

@@ -85,7 +85,7 @@ footer {
 }
 @media all and (max-width: 768px) {
   .serviceModal {
-    width: 290px;
+    width: 88%;
   }
 }
 .serviceModal i {

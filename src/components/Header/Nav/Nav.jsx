@@ -2,6 +2,7 @@ import { Link } from "react-scroll";
 
 //* css
 import style from "./Nav.module.css";
+import { Overlay } from "../../Overlay/Overlay";
 
 export const Nav = ({ isOpen, setIsOpen }) => {
   const navLink = [
@@ -31,6 +32,7 @@ export const Nav = ({ isOpen, setIsOpen }) => {
           </Link>
         ))}
       </div>
+          <Overlay overlay={isOpen ? "100%" : ""} />
     </nav>
   );
 };
