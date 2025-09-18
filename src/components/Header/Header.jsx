@@ -1,6 +1,8 @@
 import { useState } from "react";
-import { Nav } from "./Nav/Nav";
 import { Link } from "react-scroll";
+import { RemoveScroll } from "react-remove-scroll";
+
+import { Nav } from "./Nav/Nav";
 
 //* css
 import style from "./Header.module.css";
@@ -15,7 +17,9 @@ export const Header = () => {
           <Link to="home" style={{ cursor: "pointer" }}>
             Suren
           </Link>
-          <Nav isOpen={isOpen} setIsOpen={setIsOpen} />
+          <RemoveScroll enabled={isOpen}>
+            <Nav isOpen={isOpen} setIsOpen={setIsOpen} />
+          </RemoveScroll>
           <div onClick={toggleMenu} className={style.burgerMenu}>
             {isOpen ? (
               <i

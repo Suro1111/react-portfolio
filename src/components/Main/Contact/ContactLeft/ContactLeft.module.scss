@@ -1,0 +1,14 @@
+@import "../../../../assets/global/global.scss";
+
+.box {
+    h2 {
+        font-size: 30px;
+    }
+    @include flex(column, unset, unset, nowrap, unset, 20px, 0, 0);
+    .child {
+        @include flex(column, space-between, unset, nowrap, unset, 10px, 0, 0);
+        i {
+            color: #8a2be2;
+        }
+    }
+}

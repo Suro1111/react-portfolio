@@ -1,1 +1,8 @@
 @import "../../../assets/global/global.scss";
+
+.block {
+    @include flex(row, space-between, stretch, nowrap, unset, 20px, 0, 0);
+    @media all and (max-width: 768px) {
+        @include flex(column, space-between, stretch, nowrap, unset, 20px, 0, 0);
+    }
+}

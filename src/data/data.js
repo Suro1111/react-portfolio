@@ -193,3 +193,25 @@ export const clientData = [
     name: "App Developer",
   },
 ];
+
+export const footerData = Object.freeze({
+  infoLinks: [
+    { id: 1, href: "skills" },
+    { id: 2, href: "services" },
+    { id: 3, href: "portfolio" },
+    { id: 4, href: "contact" },
+  ],
+  followLinks: [
+    {
+      id: 1,
+      href: "https://www.facebook.com/profile.php?id=100004805587930",
+      icon: "fa-brands fa-facebook-f",
+    },
+    {
+      id: 2,
+      href: "https://www.instagram.com/suro_h98/",
+      icon: "fa-brands fa-instagram",
+    },
+    { id: 3, href: "https://github.com/Suro1111", icon: "fa-brands fa-github" },
+  ],
+});

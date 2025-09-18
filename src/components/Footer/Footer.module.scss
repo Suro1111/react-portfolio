@@ -1,1 +1,15 @@
 @import "../../assets/global/global.scss";
+
+footer {
+  background-color: #7f23f5;
+  color: #fff;
+  .block {
+    @include flex(row, space-between, unset, nowrap, unset, 20px, 50px 0, 0);
+    @media all and (max-width: 768px) {
+      @include flex(row, center, unset, wrap, center, 30px, 50px 0, 0);
+    }
+  }
+  .p {
+    text-align: center;
+  }
+}

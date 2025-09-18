@@ -6,6 +6,7 @@
     font-size: 4em;
     text-align: center;
     color: #0000003d;
+    transform: translateY(44px);
     @media all and (max-width: 768px) {
       font-size: 7vw;
     }
@@ -13,7 +14,6 @@
   .title {
     font-size: 28px;
     text-align: center;
-    transform: translateY(-24px);
     position: relative;
     &::after {
       content: "";
@@ -27,7 +27,6 @@
     }
     @media all and (max-width: 768px) {
       font-size: 4vw;
-      transform: translateY(0);
     }
   }
 }

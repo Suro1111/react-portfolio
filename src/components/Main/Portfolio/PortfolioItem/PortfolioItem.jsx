@@ -3,6 +3,7 @@ import { useState } from "react";
 import { PortfolioModal } from "../PortfolioModal/PortfolioModal";
 import style from "./PortfolioItem.module.css";
 import { Overlay } from "../../../Overlay/Overlay";
+import { RemoveScroll } from "react-remove-scroll";
 
 export const PortfolioItem = ({ item }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,16 +12,18 @@ export const PortfolioItem = ({ item }) => {
 
   return (
     <>
-      <div className={style.box} onClick={openModal}>
-        <div className={style.overlay}></div>
-        <div className={style.textBlock}>
-          <h3>{item?.title}</h3>
-          <p>{item?.category}</p>
+      <RemoveScroll enabled={isOpen}>
+        <div className={style.box} onClick={openModal}>
+          <div className={style.overlay}></div>
+          <div className={style.textBlock}>
+            <h3>{item?.title}</h3>
+            <p>{item?.category}</p>
+          </div>
+          <img src={item?.imgSrc} alt="logo" />
         </div>
-        <img src={item?.imgSrc} alt="logo" />
-      </div>
-      <PortfolioModal item={item} isOpen={isOpen} closeModal={closeModal}/>
-      <Overlay overlay={isOpen ? "100vw" : ""}/>
+        <PortfolioModal item={item} isOpen={isOpen} closeModal={closeModal} />
+      </RemoveScroll>
+      <Overlay overlay={isOpen ? "100vw" : ""} />
     </>
   );
 };

@@ -65,6 +65,7 @@ footer {
   font-size: 4em;
   text-align: center;
   color: rgba(0, 0, 0, 0.2392156863);
+  transform: translateY(44px);
 }
 @media all and (max-width: 768px) {
   .block .bigTitle {
@@ -74,7 +75,6 @@ footer {
 .block .title {
   font-size: 28px;
   text-align: center;
-  transform: translateY(-24px);
   position: relative;
 }
 .block .title::after {
@@ -90,6 +90,5 @@ footer {
 @media all and (max-width: 768px) {
   .block .title {
     font-size: 4vw;
-    transform: translateY(0);
   }
 }/*# sourceMappingURL=SectionTitle.module.css.map */

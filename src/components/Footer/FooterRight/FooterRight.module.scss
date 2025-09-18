@@ -1,0 +1,11 @@
+@import "../../../assets/global/global.scss";
+
+.box {
+    @include flex(column, unset, unset, nowrap, center, 30px, 0, 0);
+    .childBox {
+         @include flex(row, unset, unset, nowrap, center, 30px, 0, 0);
+        a {
+            font-size: 25px;
+        }
+    }
+}

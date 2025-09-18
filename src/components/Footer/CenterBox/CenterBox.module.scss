@@ -1,0 +1,12 @@
+@import "../../../assets/global/global.scss";
+
+.box {
+    @include flex(column, unset, center, nowrap, center, 30px, 0, 0);
+  .childBox {
+    @include flex(row, space-between, unset, nowrap, center, 30px, 0, 0);
+    cursor: pointer;
+    @media all and (max-width: 425px) {
+      @include flex(row, space-between, unset, nowrap, center, 10px, 0, 0);
+    }
+  }
+}

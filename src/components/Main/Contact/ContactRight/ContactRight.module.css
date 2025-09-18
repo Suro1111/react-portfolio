@@ -58,27 +58,62 @@ footer {
   text-decoration: none;
 }
 
-.block {
+.box .grey {
+  color: #808080;
+}
+
+.form {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: unset;
   flex-wrap: nowrap;
   text-align: unset;
-  gap: 20px;
-  padding: 0;
+  gap: 30px;
+  padding: 40px 0;
   margin: 0;
 }
-@media all and (max-width: 768px) {
-  .block {
+@media all and (max-width: 425px) {
+  .form {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
+    justify-content: unset;
+    align-items: unset;
     flex-wrap: nowrap;
     text-align: unset;
-    gap: 20px;
-    padding: 0;
+    gap: 10px;
+    padding: 10px 0;
     margin: 0;
   }
-}/*# sourceMappingURL=Contact.module.css.map */
+  .form input {
+    width: 100%;
+    padding: 10px;
+  }
+}
+.form input {
+  width: 90%;
+  padding: 25px 30px;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid #7878d4;
+  border-radius: 10px;
+}
+.form .errBorder {
+  border: 2px solid red;
+  color: red;
+}
+.form .errBorder::-moz-placeholder {
+  color: red;
+}
+.form .errBorder::placeholder {
+  color: red;
+}
+.form button[type=submit] {
+  padding: 10px;
+  cursor: pointer;
+  max-width: 150px;
+  border: 0;
+}
+.form .err {
+  color: #ff0000;
+}/*# sourceMappingURL=ContactRight.module.css.map */

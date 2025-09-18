@@ -1,0 +1,11 @@
+@import "../../../assets/global/global.scss";
+
+.box {
+    @include flex(column, unset, unset, nowrap, unset, 20px, 0, 0);
+    h2 {
+        font: 2.5em sans-serif;
+        font-style: italic;
+        color: #c7c5c5;
+        text-shadow: 0 0 5px #fff;
+    }
+}

@@ -1,0 +1,43 @@
+@import "../../../../assets/global/global.scss";
+
+.box {
+  .grey {
+    color: #808080;
+  }
+}
+
+.form {
+  @include flex(column, unset, unset, nowrap, unset, 30px, 40px 0, 0);
+  @media all and (max-width: 425px) {
+    @include flex(column, unset, unset, nowrap, unset, 10px, 10px 0, 0);
+    input {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  input {
+    width: 90%;
+    padding: 25px 30px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #7878d4;
+    border-radius: 10px;
+  }
+  .errBorder {
+    border: 2px solid red;
+    color: red;
+    &::placeholder {
+      color: red;
+    }
+  }
+  button[type="submit"] {
+    padding: 10px;
+    cursor: pointer;
+    max-width: 150px;
+    border: 0;
+    // margin: 20px auto;
+  }
+  .err {
+    color: #ff0000;
+  }
+}

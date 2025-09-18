@@ -8,6 +8,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
+import style from "./Clients.module.css";
+
 export const Clients = () => {
   const { clientData } = useContext(myContect);
   return (
@@ -24,29 +26,17 @@ export const Clients = () => {
           navigation={true}
           modules={[Pagination, Navigation]}
           className="mySwiper"
+          style={{
+            
+          }}
         >
           {clientData.map((item) => (
             <SwiperSlide key={item.id}>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  gap: "20px",
-                }}
-              >
-                <img
-                  src={item?.imgSrc}
-                  alt="imgLogo"
-                  style={{
-                    width: "50%",
-                    objectFit: "cover",
-                    borderRadius: "20px",
-                  }}
-                />
+              <div className={style.box}>
+                <img src={item?.imgSrc} alt="imgLogo" />
                 <div>
                   <h3>{item?.name}</h3>
-                  <p>{item?.desc}</p>
+                  <p className={style.p}>{item?.desc}</p>
                 </div>
               </div>
             </SwiperSlide>

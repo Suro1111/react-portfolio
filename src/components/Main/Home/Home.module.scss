@@ -13,7 +13,7 @@
       font-size: 28px;
     }
     .boxInfo {
-      @include flex(column, center, start, nowrap, unset, 20px, 0, 0);
+      @include flex(column, center, start, nowrap, unset, 20px, 60px 0 0 0, 0);
       h2 {
         font-size: 5vw;
         @media all and (max-width: 768px) {

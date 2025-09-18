@@ -1,0 +1,27 @@
+.box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.box img {
+  object-fit: cover;
+  border-radius: 15px;
+  max-width: 400px;
+}
+
+.box .p {
+  max-width: 400px;
+}
+
+@media all and (max-width: 768px) {
+  .box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .box img {
+    max-width: 100%;
+    width: 100%;
+    height: 80%;
+  }
+}

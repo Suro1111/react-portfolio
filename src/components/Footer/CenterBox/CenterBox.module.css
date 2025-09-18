@@ -58,27 +58,39 @@ footer {
   text-decoration: none;
 }
 
-.block {
+.box {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: center;
   flex-wrap: nowrap;
-  text-align: unset;
-  gap: 20px;
+  text-align: center;
+  gap: 30px;
   padding: 0;
   margin: 0;
 }
-@media all and (max-width: 768px) {
-  .block {
+.box .childBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: unset;
+  flex-wrap: nowrap;
+  text-align: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+@media all and (max-width: 425px) {
+  .box .childBox {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: unset;
     flex-wrap: nowrap;
-    text-align: unset;
-    gap: 20px;
+    text-align: center;
+    gap: 10px;
     padding: 0;
     margin: 0;
   }
-}/*# sourceMappingURL=Contact.module.css.map */
+}/*# sourceMappingURL=CenterBox.module.css.map */

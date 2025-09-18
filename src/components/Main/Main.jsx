@@ -1,4 +1,12 @@
-import { Home, About, Clients, Contact, Portfolio, Services, Skills } from "./index";
+import {
+  Home,
+  About,
+  Clients,
+  Contact,
+  Portfolio,
+  Services,
+  Skills,
+} from "./index";
 
 export const Main = () => {
   return (
@@ -10,9 +18,6 @@ export const Main = () => {
       <Portfolio />
       <Clients />
       <Contact />
-        <div className="container">
-            {/* <h1>React Portfolio</h1> */}
-        </div>
     </main>
-  )
-}
+  );
+};
