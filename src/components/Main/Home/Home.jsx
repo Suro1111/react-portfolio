@@ -1,4 +1,4 @@
-import Suro from "../../../assets/images/Suro.png";
+import Suro from "../../../assets/images/Suro.jpg";
 
 //* css
 import style from "./Home.module.css";

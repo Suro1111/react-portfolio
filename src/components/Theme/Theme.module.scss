@@ -1,0 +1,25 @@
+@import "../../assets/global/global.scss";
+
+.light {
+  position: fixed;
+  z-index: 999;
+  top: 30%;
+  right: 0;
+  cursor: pointer;
+  background-color: #9b979f;
+  padding: 15px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.dark {
+  position: fixed;
+  z-index: 999;
+  top: 30%;
+  right: 0;
+  cursor: pointer;
+  background-color: #9b979f;
+  padding: 15px;
+  border-radius: 5px;
+  color: #fff;
+}

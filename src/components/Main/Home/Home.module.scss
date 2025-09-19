@@ -30,7 +30,9 @@
   }
   img {
     max-height: 500px;
-    object-fit: contain;
+    object-fit: cover;
+    max-width: 400px;
+    width: 100%;
     border-radius: 35% 50px;
     filter: contrast(1.7);
   }

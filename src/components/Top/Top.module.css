@@ -1,5 +1,4 @@
-@import "../fonts/fonts.scss";
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,10 +8,6 @@
 
 body {
   font-family: "Nunito", sans-serif;
-}
-
-body.dark {
-  background-color: blue;
 }
 
 .container {
@@ -38,14 +33,11 @@ main,
 footer {
   padding: 20px;
 }
+
 .btn-grad {
-  background-image: linear-gradient(
-    to right,
-    #da22ff 0%,
-    #9733ee 51%,
-    #da22ff 100%
-  );
+  background-image: linear-gradient(to right, #da22ff 0%, #9733ee 51%, #da22ff 100%);
 }
+
 .btn-grad {
   padding: 15px;
   text-align: center;
@@ -66,14 +58,21 @@ footer {
   text-decoration: none;
 }
 
-@mixin flex($direction, $justify, $align, $wrap, $t_a, $gap, $p, $m) {
-  display: flex;
-  flex-direction: $direction;
-  justify-content: $justify;
-  align-items: $align;
-  flex-wrap: $wrap;
-  text-align: $t_a;
-  gap: $gap;
-  padding: $p;
-  margin: $m;
+.top {
+  position: fixed;
+  z-index: 999;
+  bottom: 5%;
+  right: 5%;
+  cursor: pointer;
+  background-color: blueviolet;
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px;
+  translate: 400%;
+  transition: 0.5s;
 }
+
+.top.active {
+  translate: 0;
+}/*# sourceMappingURL=Top.module.css.map */

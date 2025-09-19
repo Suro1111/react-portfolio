@@ -1,0 +1,20 @@
+@import "../../assets/global/global.scss";
+
+.top {
+    position: fixed;
+    z-index: 999;
+    bottom: 5%;
+    right: 5%;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+    translate: 400%;
+    transition: .5s;
+}
+
+.top.active {
+    translate: 0;
+}
